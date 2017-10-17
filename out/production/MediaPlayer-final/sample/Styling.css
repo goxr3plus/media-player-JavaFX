@@ -1,0 +1,24 @@
+.jfx-slider .thumb{
+    -fx-background-color: darkcyan;
+}
+.jfx-button:hover {
+
+    -fx-background-color: black;
+    -fx-text-fill: lightblue;
+}
+#responseAnimation {
+
+    -fx-background-color: mediumpurple;
+}
+
+
+/*Jfx-Button .roundButton.setStyle(*/
+/*"-fx-background-radius: 5em; " +*/
+/*"-fx-min-width: 3px; " +*/
+/*"-fx-min-height: 3px; " +*/
+/*"-fx-max-width: 3px; " +*/
+/*"-fx-max-height: 3px; " +*/
+/*"-fx-background-color: -fx-body-color;" +*/
+/*"-fx-background-insets: 0px; " +*/
+/*"-fx-padding: 0px;"*/
+/*);*/

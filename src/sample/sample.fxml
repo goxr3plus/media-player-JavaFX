@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="697.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="350.0" prefHeight="135.0" prefWidth="698.0" style="-fx-background-color: #303030;" styleClass="jfx-slider" stylesheets="@Styling.css">
+         <children>
+            <JFXSlider fx:id="timeSlider" layoutX="12.0" layoutY="14.0" prefHeight="14.0" prefWidth="678.0" styleClass="jfx-slider" stylesheets="@Styling.css" />
+            <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="66.0" onAction="#openButton" opacity="0.8" prefHeight="38.0" prefWidth="67.0" ripplerFill="#281f57" style="-fx-background-color: darkcyan; -fx-background-radius: 10;" text="Open" textAlignment="JUSTIFY" />
+            <JFXButton fx:id="playButton" buttonType="RAISED" layoutX="299.0" layoutY="46.0" onAction="#setPlayButton" prefHeight="70.0" prefWidth="103.0" ripplerFill="#281f57" style="-fx-background-color: darkcyan; -fx-background-radius: 50;" text="Play" textAlignment="JUSTIFY" />
+            <JFXButton fx:id="backwardButton" buttonType="RAISED" layoutX="216.0" layoutY="56.0" onAction="#setBackwardButton" prefHeight="50.0" prefWidth="74.0" ripplerFill="#281f57" style="-fx-background-color: darkcyan; -fx-background-radius: 50;" text="&lt;&lt;" textAlignment="JUSTIFY" />
+            <JFXButton fx:id="forwardButton" buttonType="RAISED" layoutX="410.0" layoutY="56.0" onAction="#setFowardButton" prefHeight="50.0" prefWidth="74.0" ripplerFill="#281f57" style="-fx-background-color: darkcyan; -fx-background-radius: 50;" text="&gt;&gt;" textAlignment="JUSTIFY" />
+            <JFXProgressBar fx:id="responseAnimation" layoutY="138.0" opacity="0.5" prefWidth="698.0" secondaryProgress="16.0" style="-fx-background-color: blue;" styleClass="jfx-progressbar" stylesheets="@Styling.css">
+               <padding>
+                  <Insets top="1.0" />
+               </padding>
+            </JFXProgressBar>
+            <JFXSpinner layoutX="602.0" layoutY="56.0" />
+            <JFXToggleButton fx:id="pauseToggle" layoutX="508.0" layoutY="56.0" onAction="#pauseToggle" text="." />
+         </children>
+      </AnchorPane>
+      <MediaView fx:id="mediaView" fitHeight="325.0" fitWidth="670.0" layoutX="13.0" layoutY="13.0" />
+   </children>
+</AnchorPane>
