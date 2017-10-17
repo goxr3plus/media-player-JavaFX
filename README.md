@@ -1,6 +1,6 @@
 # media-player-JavaFX
 A simple media player in JavaFX
-:: Note :: all features may not work.
+:: Note :: not all features will work.
 
 #### JDK used : java-JDK 9
 
